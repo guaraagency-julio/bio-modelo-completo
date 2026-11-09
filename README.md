@@ -12,11 +12,11 @@ Edite config.js para trocar nome, retrato, vídeo, imagem de fallback, projetos 
 
 Os retratos atuais são fotografias ilustrativas. Para obter recorte perfeito no hero, substitua o retrato por PNG/WebP com transparência e, em styles.css, remova ou ajuste a regra mask-image de .hero-person. O efeito atual usa máscara suave como solução estática inicial.
 
-## GitHub Pages
+## GitHub Pages com Actions
 
-Settings → Pages → Build and deployment → Deploy from a branch → main → /(root) → Save.
+Em **Settings → Pages → Build and deployment**, escolha **GitHub Actions**. O arquivo `.github/workflows/deploy.yml` publica automaticamente os arquivos estáticos a cada push na branch main e aceita disparo manual pela aba Actions.
 
-URL esperada: https://guaraagency-julio.github.io/bio-modelo-completo/
+URL: https://guaraagency-julio.github.io/bio-modelo-completo/
 
 ## Incorporar em um site no mesmo domínio
 
