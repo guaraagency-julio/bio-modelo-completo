@@ -1,25 +1,33 @@
 # Bio Modelo Completo — Guará Agency
 
-Modelo demonstrativo de biosite editorial para profissionais e pequenos negócios. Sofia Neri é uma persona fictícia. Imagens e vídeos são referências visuais, e os quatro trabalhos exibidos são conceitos de demonstração, sem atribuição de autoria real à personagem.
+Biosite premium e enxuto, planejado principalmente para smartphones. Modelo demonstrativo para apresentar site completo, uma prévia visual do portfólio e contato. Sofia Neri é fictícia, e os projetos e as fotografias são ilustrativos.
 
-## Recursos
+## Arquitetura de conteúdo
 
-Hero com vídeo em autoplay silencioso, imagem de retrato em sobreposição e máscara gradual; botões de acesso rápido; apresentação; portfólio em carrossel com navegação e rolagem por toque; acordeão de serviços; menu responsivo; botão de compartilhar; barra de progresso; animações com IntersectionObserver e respeito à preferência por movimento reduzido.
+- Hero editorial: vídeo de fundo, retrato sobreposto, nome, especialidade e uma frase.
+- CTA principal: conheça meu site completo. É a ação de maior destaque.
+- Dois atalhos: portfólio e contato.
+- Prévia visual: carrossel com miniaturas, navegação por toque e setas.
+- Contato compacto: WhatsApp, Instagram e e-mail.
 
-## Personalização
+Removidos longos textos institucionais, seção sobre, lista de serviços, menu extenso e blocos redundantes de contato.
 
-Edite config.js para trocar nome, retrato, vídeo, imagem de fallback, projetos e URLs do site, WhatsApp e e-mail. Enquanto URLs externas estiverem vazias, os botões exibem aviso de demonstração. Altere textos e serviços em index.html. Edite as variáveis de cores em :root de styles.css.
+## Personalizar
 
-Os retratos atuais são fotografias ilustrativas. Para obter recorte perfeito no hero, substitua o retrato por PNG/WebP com transparência e, em styles.css, remova ou ajuste a regra mask-image de .hero-person. O efeito atual usa máscara suave como solução estática inicial.
+Altere config.js para trocar identidade, fotos, vídeo, links externos e projetos. As URLs site e portfolio devem apontar para a landing page do cliente e a seção de portfólio. Deixe vazio enquanto for demonstração: o botão abrirá aviso, sem simular perfis reais.
 
-## GitHub Pages com Actions
+O vídeo só começa a carregar quando a hero está visível; economia de dados e movimento reduzido mantêm a imagem de capa. Imagens da galeria são carregadas sob demanda. Em entregas comerciais, substitua os assets demonstrativos por arquivos autorizados e preferencialmente otimizados/hospedados pela própria marca.
 
-Em **Settings → Pages → Build and deployment**, escolha **GitHub Actions**. O arquivo `.github/workflows/deploy.yml` publica automaticamente os arquivos estáticos a cada push na branch main e aceita disparo manual pela aba Actions.
+Para usar PNG/WebP com transparência no retrato, adapte a máscara de .hero-portrait em styles.css.
+
+## Integração com site principal
+
+Coloque os quatro arquivos da aplicação (index.html, styles.css, config.js e app.js) na pasta /bio/ do site comercial. Os caminhos de arquivo são relativos, permitindo acessar em https://dominio.com.br/bio/.
+
+## GitHub Pages
+
+Publicação automática pela branch main com GitHub Actions, via .github/workflows/deploy.yml. Mantenha Source como GitHub Actions em Settings → Pages.
 
 URL: https://guaraagency-julio.github.io/bio-modelo-completo/
 
-## Incorporar em um site no mesmo domínio
-
-Copie index.html, styles.css, config.js e app.js para a pasta /bio/ da landing page principal. Os caminhos de assets são relativos. Assim, a URL fica dominio-do-cliente.com.br/bio/.
-
-Este modelo usa HTML/CSS/JavaScript puro, sem etapa de build, sem API, sem rastreamento e sem servidor. O vídeo remoto é do Pexels; imagens remotas são da Unsplash. Para entrega comercial, use arquivos próprios/hospedados pelo cliente e valide autorizações de uso.
+Nenhuma alteração foi feita no repositório bio-modelo-simples.

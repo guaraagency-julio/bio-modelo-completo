@@ -22,64 +22,57 @@
 <symbol id="close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
 <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
 <symbol id="share" viewBox="0 0 24 24"><path d="M12 15V3m-4 4 4-4 4 4M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></symbol>
-</svg>
-<div class="progress" id="progress" aria-hidden="true"></div>
-<header class="header" id="top">
-<a class="wordmark" href="#top" aria-label="Voltar ao início"><span class="wordmark-symbol">S<span>✳</span></span><span class="wordmark-copy">SOFIA NERI<small>ESTÚDIO CRIATIVO</small></span></a>
-<nav class="desktop-nav" aria-label="Navegação principal"><a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#servicos">Serviços</a></nav>
-<a class="header-cta" href="#contato">Vamos conversar <svg class="icon"><use href="#arrow"/></svg></a>
-<button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu" type="button"><svg class="icon"><use href="#menu"/></svg></button>
-<nav class="mobile-nav" id="mobile-nav" aria-label="Navegação móvel" hidden><a href="#sobre">Sobre mim</a><a href="#projetos">Projetos</a><a href="#servicos">Serviços</a><a href="#contato">Contato</a></nav>
-</header>
-<main>
-<section class="hero" aria-labelledby="hero-heading">
-<div class="hero-visual">
-<video id="hero-video" class="hero-video" muted autoplay playsinline loop preload="metadata" poster="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1600&auto=format&fit=crop&q=80"><source src="https://videos.pexels.com/video-files/2715412/2715412-hd_1920_1080_30fps.mp4" type="video/mp4"></video>
-<div class="video-tint"></div><div class="hero-oval" aria-hidden="true"></div>
-<img class="hero-person" id="hero-person" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900&h=1150&fit=crop&crop=faces&auto=format&q=85" alt="Retrato ilustrativo de uma profissional criativa">
-<div class="hero-visual-label">DIREÇÃO CRIATIVA <span>✳</span> IDENTIDADE <span>✳</span> CONTEÚDO</div>
-<button class="video-toggle" id="video-toggle" type="button" aria-label="Pausar vídeo de fundo" title="Pausar ou reproduzir vídeo"><svg class="icon"><use href="#pause"/></svg><span>VÍDEO</span></button>
+<symbol id="whatsapp" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-12 7l-4 1 1-4a8 8 0 1 1 15 12Z"/></symbol></svg>
+<div class="backdrop-glow" aria-hidden="true"></div>
+<div class="site" id="top">
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Voltar ao início"><span class="brand-emblem">S<span>✳</span></span><span class="brand-text">SOFIA NERI <small>ESTÚDIO CRIATIVO</small></span></a>
+    <button class="share-button" id="share-link" type="button" aria-label="Compartilhar esta página"><svg class="icon"><use href="#share"/></svg></button>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="hero-name">
+      <div class="hero-picture" id="hero-picture">
+        <video id="hero-video" class="hero-video" muted playsinline loop preload="none" poster="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1000&fit=crop&auto=format&q=80" aria-hidden="true"></video>
+        <div class="picture-overlay" aria-hidden="true"></div>
+        <div class="portrait-orbit" aria-hidden="true"></div>
+        <img id="hero-portrait" class="hero-portrait" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=700&h=900&fit=crop&crop=faces&auto=format&q=85" fetchpriority="high" decoding="async" alt="Retrato ilustrativo de uma profissional criativa">
+        <span class="picture-stamp" aria-hidden="true">FEITO COM<br>INTENÇÃO <b>✳</b></span>
+        <span class="picture-label">IDEIAS · IMAGENS · MOVIMENTO</span>
+        <button id="video-toggle" class="video-toggle" type="button" aria-label="Pausar vídeo" hidden><svg class="icon"><use href="#pause"/></svg></button>
+      </div>
+      <div class="hero-content">
+        <p class="tiny-title"><span>✳</span> PRAZER, EU SOU</p>
+        <h1 id="hero-name">Sofia <em>Neri.</em></h1>
+        <p id="hero-role" class="role">DIREÇÃO CRIATIVA · IDENTIDADE VISUAL</p>
+        <p id="hero-bio" class="hero-bio">Ideias com personalidade. Projetos para sentir, ver e lembrar.</p>
+        <a class="primary-cta" href="#" data-link="site">
+          <span><small>EXPLORE MAIS</small><strong>Conheça meu site completo</strong></span>
+          <span class="cta-icon"><svg class="icon"><use href="#arrow"/></svg></span>
+        </a>
+        <div class="quick-links">
+          <a href="#portfolio" class="quick-link"><span>Meu portfólio</span><svg class="icon"><use href="#arrow"/></svg></a>
+          <a href="#contato" class="quick-link"><span>Entre em contato</span><svg class="icon"><use href="#arrow"/></svg></a>
+        </div>
+        <p class="micro-note">✳ &nbsp; UM POUCO DE MIM. O RESTO, VOCÊ DESCOBRE NO SITE.</p>
+      </div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>CRIATIVIDADE ✳ IDENTIDADE ✳ CONTEÚDO ✳ EXPERIÊNCIAS ✳ &nbsp;</span><span>CRIATIVIDADE ✳ IDENTIDADE ✳ CONTEÚDO ✳ EXPERIÊNCIAS ✳ &nbsp;</span></div></div>
+    <section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
+      <div class="section-head">
+        <div><p class="section-kicker">UMA PEQUENA PRÉVIA <span>✳</span> PROJETOS ILUSTRATIVOS</p><h2 id="portfolio-heading">Meu universo <em>visual.</em></h2></div>
+        <div class="slider-controls"><button id="prev-project" type="button" aria-label="Imagem anterior">←</button><button id="next-project" type="button" aria-label="Próxima imagem">→</button></div>
+      </div>
+      <div id="work-rail" class="work-rail" aria-label="Prévia visual dos projetos" aria-roledescription="carrossel"></div>
+      <div class="portfolio-bottom"><span class="position"><span id="project-index">01</span><span class="position-line"></span><span id="project-total">04</span></span><a href="#" data-link="portfolio" class="all-work">Ver o portfólio completo <svg class="icon"><use href="#arrow"/></svg></a></div>
+    </section>
+    <section class="contact" id="contato" aria-labelledby="contact-heading">
+      <div><p class="section-kicker">VAMOS CONVERSAR?</p><h2 id="contact-heading">Tem uma ideia? <em>Me chama.</em></h2></div>
+      <div class="contact-links"><a href="#" data-link="whatsapp" class="contact-main">Falar no WhatsApp <svg class="icon"><use href="#arrow"/></svg></a><a href="#" class="social-circle" data-link="instagram" aria-label="Instagram"><svg class="icon"><use href="#instagram"/></svg></a><a href="#" class="social-circle" data-link="email" aria-label="E-mail"><svg class="icon"><use href="#mail"/></svg></a></div>
+    </section>
+  </main>
+  <footer><span>© <span id="year"></span> <span id="copyright-name">SOFIA NERI</span> · MODELO DEMONSTRATIVO</span><span>POR <a href="https://www.guaraagency.com.br/" target="_blank" rel="noopener noreferrer">GUARÁ AGENCY ↗</a></span></footer>
 </div>
-<div class="hero-content">
-<div class="hero-topline"><span class="tiny-star">✳</span><span>OLÁ, É UM PRAZER TER VOCÊ AQUI.</span><span class="hero-line"></span><span>01 / 05</span></div>
-<p class="hero-kicker">ESTÚDIO CRIATIVO · MODELO DEMONSTRATIVO</p>
-<h1 id="hero-heading">Ideias que<br><em>ganham forma.</em></h1>
-<p class="hero-description">Sou <strong id="profile-name">Sofia Neri</strong>. Entre estratégia, estética e sensibilidade, ajudo marcas a traduzirem sua essência em presença.</p>
-<div class="hero-actions"><a class="button button-dark" href="#projetos">Explore meu trabalho <svg class="icon"><use href="#arrow"/></svg></a><a class="button button-text" href="#sobre">Conheça minha história <svg class="icon"><use href="#arrow-long"/></svg></a></div>
-</div>
-<div class="hero-side-label" aria-hidden="true">DESIGN WITH INTENTION — 2026</div>
-</section>
-<div class="ticker" aria-label="Áreas de atuação"><div class="ticker-track" aria-hidden="true"><span>ESTRATÉGIA ✳ IDENTIDADE VISUAL ✳ CONTEÚDO ✳ DIREÇÃO CRIATIVA ✳ EXPERIÊNCIAS DIGITAIS ✳</span><span>ESTRATÉGIA ✳ IDENTIDADE VISUAL ✳ CONTEÚDO ✳ DIREÇÃO CRIATIVA ✳ EXPERIÊNCIAS DIGITAIS ✳</span></div></div>
-<section class="shortcuts section-pad" id="links" aria-label="Acesso rápido">
-<div class="section-top reveal"><p class="kicker">01 / SEUS PRÓXIMOS PASSOS</p><h2>O que você veio <em>encontrar?</em></h2><p class="section-intro">Deixei tudo organizado para você chegar onde precisa, sem complicação.</p></div>
-<div class="shortcuts-grid">
-<a class="shortcut reveal" href="#sobre"><span class="shortcut-count">01 / QUEM SOU</span><span class="shortcut-main"><span>Conheça<br><em>minha história</em></span><span class="shortcut-circle"><svg class="icon"><use href="#arrow"/></svg></span></span></a>
-<a class="shortcut reveal" href="#projetos"><span class="shortcut-count">02 / O QUE EU CRIO</span><span class="shortcut-main"><span>Explore meu<br><em>portfólio</em></span><span class="shortcut-circle"><svg class="icon"><use href="#arrow"/></svg></span></span></a>
-<a class="shortcut reveal" href="#servicos"><span class="shortcut-count">03 / COMO POSSO AJUDAR</span><span class="shortcut-main"><span>Veja meus<br><em>serviços</em></span><span class="shortcut-circle"><svg class="icon"><use href="#arrow"/></svg></span></span></a>
-<button class="shortcut shortcut-accent reveal" type="button" data-demo-link="site"><span class="shortcut-count">04 / MAIS DETALHES</span><span class="shortcut-main"><span>Meu site<br><em>completo</em></span><span class="shortcut-circle"><svg class="icon"><use href="#arrow"/></svg></span></span></button>
-</div></section>
-<section class="about section-pad" id="sobre">
-<div class="about-photo reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=850&h=1000&fit=crop&auto=format&q=85" alt="Retrato de referência editorial do modelo demonstrativo"><span class="photo-note">PRAZER,<br>SOFIA. <span>↗</span></span></div>
-<div class="about-copy reveal"><p class="kicker">02 / UM POUCO SOBRE MIM</p><h2>Prazer em criar<br>o que faz <em>sentido.</em></h2><p>Eu acredito em projetos com intenção, personalidade e boas conversas. Gosto de descobrir o que torna cada negócio singular e transformar essas descobertas em experiências visuais.</p><p>Por aqui, cada detalhe importa. Do primeiro rascunho até o último ajuste.</p><a class="underline-link" href="#contato">Que tal criarmos algo juntos? <svg class="icon"><use href="#arrow"/></svg></a><div class="about-sticker" aria-hidden="true">FEITO COM<br>INTENÇÃO <span>✳</span></div></div>
-</section>
-<section class="work section-pad" id="projetos">
-<div class="work-heading reveal"><div><p class="kicker">03 / UMA SELEÇÃO DE PROJETOS</p><h2>Um pouco do<br>meu <em>universo.</em></h2></div><p>Conceitos visuais criados para demonstrar o potencial deste modelo de biosite.</p></div>
-<div class="carousel-controls reveal"><span id="carousel-counter">01 / 04</span><div><button type="button" id="prev-project" aria-label="Projeto anterior" class="round-arrow">←</button><button type="button" id="next-project" aria-label="Próximo projeto" class="round-arrow">→</button></div></div>
-<div class="work-rail" id="work-rail" aria-roledescription="carrossel" aria-label="Portfólio de exemplo"></div>
-<div class="carousel-track" aria-hidden="true"><div id="carousel-progress"></div></div>
-</section>
-<section class="services section-pad" id="servicos">
-<div class="services-head reveal"><p class="kicker">04 / COMO POSSO AJUDAR</p><h2>Do primeiro insight<br>ao <em>último detalhe.</em></h2><p>Serviços personalizáveis de acordo com as necessidades de cada cliente.</p></div>
-<div class="services-list" id="services-list">
-<div class="service reveal"><button type="button" class="service-button" aria-expanded="false"><span class="service-number">01</span><span class="service-title">Identidade visual & branding</span><span class="service-plus"><svg class="icon"><use href="#plus"/></svg></span></button><div class="service-panel" hidden><p>Direção estética, paleta, tipografia, sistema visual e aplicações para uma marca coesa.</p></div></div>
-<div class="service reveal"><button type="button" class="service-button" aria-expanded="false"><span class="service-number">02</span><span class="service-title">Conteúdo & direção criativa</span><span class="service-plus"><svg class="icon"><use href="#plus"/></svg></span></button><div class="service-panel" hidden><p>Planejamento visual e editorial, conceitos de campanha e conteúdo para canais digitais.</p></div></div>
-<div class="service reveal"><button type="button" class="service-button" aria-expanded="false"><span class="service-number">03</span><span class="service-title">Experiências digitais</span><span class="service-plus"><svg class="icon"><use href="#plus"/></svg></span></button><div class="service-panel" hidden><p>Landing pages, sites institucionais e jornadas digitais feitas para apresentar seu negócio.</p></div></div>
-</div>
-</section>
-<section class="contact section-pad" id="contato"><div class="contact-glow" aria-hidden="true"></div><p class="kicker reveal">05 / VAMOS CONVERSAR?</p><h2 class="reveal">Seu próximo projeto<br>pode começar <em>aqui.</em></h2><p class="reveal">Tem uma ideia, uma marca ou só vontade de conversar? Escolha um canal abaixo.</p><div class="contact-actions reveal"><button class="button button-cream" data-demo-link="whatsapp" type="button">Falar no WhatsApp <svg class="icon"><use href="#arrow"/></svg></button><button class="button button-outline" data-demo-link="email" type="button">Enviar e-mail <svg class="icon"><use href="#mail"/></svg></button></div><div class="contact-decoration" aria-hidden="true">✳</div></section>
-</main>
-<footer class="footer"><div class="footer-top"><a class="footer-logo" href="#top">S<span>✳</span>N.</a><p>Estúdio criativo<br>de ideias e boas conversas.</p><button class="footer-share" id="share-link" type="button"><svg class="icon"><use href="#share"/></svg> Compartilhar página</button></div><div class="footer-bottom"><span>© <span id="year"></span> SOFIA NERI. MODELO DEMONSTRATIVO.</span><span>CRIADO POR <a href="https://www.guaraagency.com.br/" target="_blank" rel="noopener noreferrer">GUARÁ AGENCY ↗</a></span><a href="#top">VOLTAR AO TOPO ↑</a></div></footer>
-<dialog class="demo-modal" id="demo-modal" aria-labelledby="demo-title"><button class="modal-close" type="button" id="modal-close" aria-label="Fechar"><svg class="icon"><use href="#close"/></svg></button><p class="modal-asterisk">✳</p><p class="kicker">VITRINE DEMONSTRATIVA</p><h2 id="demo-title">O link do cliente entra aqui.</h2><p>Este é um modelo para o portfólio da Guará. Os links externos ficam ativos depois da configuração do cliente no arquivo config.js.</p><button class="button button-dark" id="modal-okay" type="button">Entendi <svg class="icon"><use href="#arrow"/></svg></button></dialog>
+<dialog class="demo-modal" id="demo-modal" aria-labelledby="demo-title"><button id="modal-close" class="modal-close" type="button" aria-label="Fechar"><svg class="icon"><use href="#close"/></svg></button><span class="dialog-flower">✳</span><p class="section-kicker">LINK DEMONSTRATIVO</p><h2 id="demo-title">Aqui entra o link do cliente.</h2><p>Na versão personalizada, este botão leva ao endereço real. Configure em <code>config.js</code>.</p><button id="modal-okay" class="modal-okay" type="button">Entendi ↗</button></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="./config.js"></script><script src="./app.js" defer></script>
 </body></html>
