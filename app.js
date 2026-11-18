@@ -6,8 +6,8 @@ var reduced=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduc
 var dataSaver=Boolean(navigator.connection&&navigator.connection.saveData);
 function showDemo(type){
  var labels={site:"site completo",portfolio:"portfólio completo",whatsapp:"WhatsApp",instagram:"Instagram",email:"e-mail"};
- $("#demo-title").textContent="Aqui entra o "+(labels[type]||"link")+" do cliente.";
- var d=$("#demo-modal");if(d.showModal)d.showModal();else toast("Configure o link no arquivo config.js");
+ $("#demo-title").textContent="Acesso demonstrativo: "+(labels[type]||"link")+".";
+ var d=$("#demo-modal");if(d.showModal)d.showModal();else toast("Acesso demonstrativo. Nenhuma informação foi enviada.");
 }
 document.querySelectorAll("[data-link]").forEach(function(el){
  var type=el.dataset.link,url=(cfg.links||{})[type];
